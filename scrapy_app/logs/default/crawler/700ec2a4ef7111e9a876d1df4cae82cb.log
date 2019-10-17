@@ -1,0 +1,382 @@
+2019-10-16 02:30:14 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-10-16 02:30:14 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.3 (default, Mar 27 2019, 22:11:17) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Linux-5.0.0-31-generic-x86_64-with-debian-buster-sid
+2019-10-16 02:30:14 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/crawler/700ec2a4ef7111e9a876d1df4cae82cb.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-10-16 02:30:14 [scrapy.extensions.telnet] INFO: Telnet Password: d0279c5f1b510144
+2019-10-16 02:30:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-16 02:30:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-16 02:30:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-16 02:30:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-10-16 02:30:14 [scrapy.core.engine] INFO: Spider opened
+2019-10-16 02:30:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-16 02:30:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2019-10-16 02:30:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/robots.txt> (referer: None)
+2019-10-16 02:30:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587?p=1> (referer: None)
+2019-10-16 02:30:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3534> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:20 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-09 21:25:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3534>
+{'category': 1,
+ 'contents': '윈브도 더블 점프 색좀 바꿔줘여\xa0박쥐 날리는애는 멋지게 됬드만..',
+ 'published_date': '2019-10-09 21:25',
+ 'recommends': '0',
+ 'title': '윈브도 더블 점프 색좀 바꿔줘여',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3534',
+ 'views': 715}
+2019-10-16 02:30:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3538> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:21 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 07:49:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3538>
+{'category': 1,
+ 'contents': '미스틱도어 쓰는 유저인데 솔직히 살때 노가다 좀 귀찮음...100개씩 언제 다 사한묶음에 천개넘게되는모양이던데',
+ 'published_date': '2019-10-13 07:49',
+ 'recommends': '0',
+ 'title': '마법의 돌 알케스터 한번에 구매 1000개씩 되게좀',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3538',
+ 'views': 152}
+2019-10-16 02:30:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3539> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:22 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 13:56:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3539>
+{'category': 1,
+ 'contents': '예전에 모험가 직업군 스킬들도 리뉴얼한 적이 있었지만그것도 한참 오래 된 2010년대 초반 얘기일 뿐지금 스킬 '
+             '이펙트 구립니다요즘 나오는 신직업들처럼 뿌슝뿌붐빵빠슝하게 바꿔주세요',
+ 'published_date': '2019-10-13 13:56',
+ 'recommends': '0',
+ 'title': '모험가 직업군 스킬 리메이크',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3539',
+ 'views': 231}
+2019-10-16 02:30:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3540> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:23 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 15:55:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3540>
+{'category': 1,
+ 'contents': '●▅▇█▇▆ ▅▄▇ 섀도 살려줭',
+ 'published_date': '2019-10-13 15:55',
+ 'recommends': '0',
+ 'title': '●▅▇█▇▆ ▅▄▇ 섀도 살려줭',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3540',
+ 'views': 149}
+2019-10-16 02:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3544> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:26 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-14 02:19:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3544>
+{'category': 1,
+ 'contents': '~다른직업도 자전 열어주던가~~',
+ 'published_date': '2019-10-14 02:19',
+ 'recommends': '0',
+ 'title': '자전코인 삭제해',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3544',
+ 'views': 1071}
+2019-10-16 02:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3545> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:28 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-14 23:54:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3545>
+{'category': 1,
+ 'contents': '훈장 순서 원하는 대로 설정하고 싶어요',
+ 'published_date': '2019-10-14 23:54',
+ 'recommends': '0',
+ 'title': '훈장 컬렉션 커스텀 기능!',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3545',
+ 'views': 129}
+2019-10-16 02:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3529> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:31 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-02 18:39:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3529>
+{'category': 1,
+ 'contents': "특) 루나섭 최고의 쓰레기길드등장하다그 길드의 이름은'뽀미'사길 스길이라고합니다 조심하세요무통거래사기 및 교불템 "
+             '사기 빈번하다네요.',
+ 'published_date': '2019-10-02 18:39',
+ 'recommends': '0',
+ 'title': '특쫑! 루나사기길드등장하다',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3529',
+ 'views': 1056}
+2019-10-16 02:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3536> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:32 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-10 19:57:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3536>
+{'category': 1,
+ 'contents': '엘보 돌리는 매크로 때문에 일부러 이렇게 둔거라면 곧무 뜬 후에 만이라도\xa0 몇 마리 더 잡으면 되는지 잠시 '
+             '떳다 사라지는 메세지 형태로라도 알려주면 편할 것 같습니다.. ',
+ 'published_date': '2019-10-10 19:57',
+ 'recommends': '0',
+ 'title': '엘리트 보스 뜨기 전까지 몇 마리 잡아야 하는지 확인표나 게이지 같은게 있으면 좋겠습니다.',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3536',
+ 'views': 514}
+2019-10-16 02:30:33 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-10-16 02:30:33 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-10-16 02:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3543> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:33 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 19:07:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3543>
+{'category': 1,
+ 'contents': '사랑해',
+ 'published_date': '2019-10-13 19:07',
+ 'recommends': '0',
+ 'title': '메이플',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3543',
+ 'views': 202}
+2019-10-16 02:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3541> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:35 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 15:56:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3541>
+{'category': 1,
+ 'contents': '&nbsp;●▅▇█▇▆ ▅▄▇ 나로 살려줭',
+ 'published_date': '2019-10-13 15:56',
+ 'recommends': '0',
+ 'title': '●▅▇█▇▆ ▅▄▇ 나로 살려줭',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3541',
+ 'views': 204}
+2019-10-16 02:30:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3530> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:40 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-02 20:23:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3530>
+{'category': 1,
+ 'contents': '아란 레벨 50제 퀘스트 아기 늑대를 위한 영양식에 요구되는 해마의꼬리 50개와아기늑대영양식1개를 '
+             '모으려고하는데요해마의꼬리는 씨클을 잡으면 얻을 수 있다고 하네요지금저의 레벨은 50인데, 씨클은 레벨이 76이더군요 '
+             '도대체 몇대를 때려서 잡아야하는 건가요?저는 리부트 서버입니다',
+ 'published_date': '2019-10-02 20:23',
+ 'recommends': '0',
+ 'title': '아란 레벨 50제 퀘스트 아기 늑대를 위한 영양식',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3530',
+ 'views': 1007}
+2019-10-16 02:30:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3491> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3532> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:43 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-05 22:22:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3491>
+{'category': 1,
+ 'contents': '그냥 엔버가 보는 방향으로 브레스 날아가게 해주지뒷브레스좀 안되게',
+ 'published_date': '2019-09-05 22:22',
+ 'recommends': '0',
+ 'title': '엔버 마스코트 오브 퍼밀리어 방향좀',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3491',
+ 'views': 546}
+2019-10-16 02:30:43 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-07 18:17:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3532>
+{'category': 1,
+ 'contents': '메이플스토리(이하 메이플) 와 메이플스토리m(이하 메m) 연계 확대○ 지금 제공중인 것1. 메m 일일임무로 메이플 '
+             '마일리지7002. 메m 120레벨 이상시 메이플에서 유니온 ss3. 메이플포인트 공유○ 바라는 것1. 코인샆에서 '
+             '관련 아이템 판매ex) 메이플에서 메m 보장상자, 메m에서 메이플 버닝물약2. 유니온 sss 확장 or 적용 캐릭 '
+             '확대',
+ 'published_date': '2019-10-07 18:17',
+ 'recommends': '0',
+ 'title': '메이플스토리와 메이플스토리m 연계 확대',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3532',
+ 'views': 991}
+2019-10-16 02:30:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3484> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:47 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-08-29 09:54:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3484>
+{'category': 1,
+ 'contents': '- 파티퀘스트 개편 -ㄹㅇ 파퀘하는사람 있음?파퀘템셋 진짜 개그지처럼 옵션 만들어놓고 경험치도 안줘 이럴거면 '
+             '파티퀘스트 왜만든지 모르겠음..갠적으로 나는 정말 예전에 커닝파퀘 루디파퀘 올비파퀘 등등 유저가 다같이 협심해서 '
+             '파퀘했던 그 시절이 너무 즐거웠던걸로 기억하는데 지금 메이플은 너무 솔플위주임..ㅠㅠ다른 rpg보면 진짜 파티가 '
+             '중요한 게임이 많고 그 게임들 파티맺고 디코하면서 재밌게 플레이하는데 메이플은 진짜 갈수록 솔플솔플.. 파티컨텐츠 '
+             '개편좀 합시다.',
+ 'published_date': '2019-08-29 09:54',
+ 'recommends': '16',
+ 'title': '이건 좀 고려해보자.',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3484',
+ 'views': 4549}
+2019-10-16 02:30:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3546> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3542> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:47 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-15 15:00:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3546>
+{'category': 1,
+ 'contents': '몇년동안 길드마크 고정이고 변경된거 1도없는데추가적으로 좀 색다른 마크들도 생겻으면 좋겠습니다',
+ 'published_date': '2019-10-15 15:00',
+ 'recommends': '0',
+ 'title': '길드 마크 추가하자',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3546',
+ 'views': 94}
+2019-10-16 02:30:47 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-13 17:59:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3542>
+{'category': 1,
+ 'contents': '어빌리티 상황에따라 쓸수있게 유니온처럼 슬롯추가해주세요~~ 캐시로팔아도 잘팔릴듯',
+ 'published_date': '2019-10-13 17:59',
+ 'recommends': '0',
+ 'title': '어빌리티 슬롯 추가해주세요~~',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3542',
+ 'views': 396}
+2019-10-16 02:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3489> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:49 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-02 12:30:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3489>
+{'category': 1,
+ 'contents': '마라벨 풀셋 못생겨서 끼기 시러요매번 갈아입기도 귀찮고마라벨 얼장이 있다는건 마라벨 풀셋을 모았다는 뜻이니까얼장만 '
+             '껴도 마라벨 풀셋 효과 발동되게 해주세요룩덕에게 자유를...라이딩 이쁜데 쓰지를 못해...',
+ 'published_date': '2019-09-02 12:30',
+ 'recommends': '0',
+ 'title': '마라벨 얼장만 껴도 세트효과 발동되게 해주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3489',
+ 'views': 1768}
+2019-10-16 02:30:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3492> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:51 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-06 16:49:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3492>
+{'category': 1,
+ 'contents': '필자는 얼마전 글로리온 슈프림링을 상점에 실수로 팔았다.복구문의를 했지만 돌아오는 답은 복구해드리고싶은데 '
+             '고유아이템이라 안되요 ㅎㅎ 라고 문의가왔다.1차적인건 본인 잘못이기에 어쩔수없다고 생각했다.근데 메이플 유튜브보다가 '
+             '29xx님의 유튜브를 접하게 되었다.그런데 이분도 실수로 상점에 잡템판매하다 고유아이템이면서 교환불가 아이템인 '
+             '피어리스펜던트를 팔았다.고유아이템이어서 복구를 안해준다더니 이분은 다음날 바로 복구를 받으셨다.고유아이템팔땐 '
+             '경고창이 뜨기때문에 본인부주의라고 복구가어렵다하더니 왜 펜던트는 복구가된건지 이해가안간다.똑같이 경고창도 뜨고 '
+             '판매시 재구매목록엔 뜨지않는다.문의에 링크까지 띄워서 무슨차이길래 이건복구가되고 이건복구가안되냐니까 이제는 '
+             '내부기준에 안맞아서란다 도대체 그 기준이뭔데 뭐냐니까 수십번물어도 설명하지않고 되도않는 내부기준 '
+             '타령한다.모카페에서도 형평성의문제같다고 다들 이야기하시는데 \xa0복구기준에대해서 명확히 설명해줬으면한다.',
+ 'published_date': '2019-09-06 16:49',
+ 'recommends': '20',
+ 'title': '형편없는 형평성없는 복구기준에 대해서',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3492',
+ 'views': 1541}
+2019-10-16 02:30:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3494> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:55 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-09 20:27:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3494>
+{'category': 1,
+ 'contents': '벨패 할때 \xa0잘고려해서 해주세요 제발..',
+ 'published_date': '2019-09-09 20:27',
+ 'recommends': '0',
+ 'title': '벨패',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3494',
+ 'views': 975}
+2019-10-16 02:30:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3497> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:30:57 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-11 20:20:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:30:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3497>
+{'category': 1,
+ 'contents': '맥뎀 한계 돌파 넣으면 좋겟다',
+ 'published_date': '2019-09-11 20:20',
+ 'recommends': '0',
+ 'title': '제네 2차 해방에',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3497',
+ 'views': 1367}
+2019-10-16 02:31:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3495> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:31:05 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-10 12:07:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:31:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3495>
+{'category': 1,
+ 'contents': '노력만으로도 스펙업이 가능한 심볼시스템 다좋습니다근데 일일퀘스트는 너무한거 같습니다 사냥 보스말고는 컨텐츠가 딱히 '
+             '없으니 그냥 일거리를 만든느낌입니다 물론 이게 재밋으면 모를까 재미1도없는데 안하면 손해고 플레이에 제약사항을 '
+             '둔느낌이에요 헤이븐야영지처럼 주간퀘로 바꿔주시면 좋겟네여 보상으로 코젬도 주시면 좋겟구요Rpg게임의 근본이 뭡니까? '
+             '노가다? 반복? 바로 롤플레잉 파티 게임이죠 메이플은 현재 개나소나 바인드쓰고 그냥 딜넣는구조만 다른 스킬이펙트만 '
+             '다른 형식이죠 이번에 나온 호영도 똑같아요 괜히 어정쩡하게 스킬사용구조만 어렵게햇지 다른캐릭이랑 다른게없어요메이플이 '
+             '옛날부터 그냥 단순히 딜만넣는게임이엿다? 제가알던 옛날 메이플은 루디브리엄 파퀘를 하기위해선 다크사이트를 '
+             '사용할수있는 도적이 필요했고 텔포를 보유한직업도 필요햇으며 먼거리의 적을 맞추기위해 긴 사정가리의 궁수같은 직엄도 '
+             '필요하던 롤플레잉의 개념을 만족하던 게임이 있엇습니다어느순간부터 큐브 혼줌 신직업이 나오면서 딜찍누 현질 졷망겜이 '
+             '되버렷죠메이플이 과연 객관적으로 잘만는게임이라고 보십니까 과거추억팔이가 없다면 지금 이미친게임이 유지되고 잇엇을까요 '
+             '어떤분이 쓴글처럼 빠르면 20년 망하지안을려면 제2의 빅뱅패치가 필요하다고 봅니다 강원기 디렉터 교체와 말이죠',
+ 'published_date': '2019-09-10 12:07',
+ 'recommends': '7',
+ 'title': '메일플 미친진입장벽을 해소해주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3495',
+ 'views': 2889}
+2019-10-16 02:31:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3531> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:31:08 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-04 17:37:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:31:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3531>
+{'category': 1,
+ 'contents': '안경좀 낄수있게해조',
+ 'published_date': '2019-10-04 17:37',
+ 'recommends': '0',
+ 'title': '안드로이드 개편좀 ㅠㅠ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3531',
+ 'views': 1266}
+2019-10-16 02:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3528> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:31:13 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-10-02 11:46:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3528>
+{'category': 1,
+ 'contents': '본캐 컨셉맞추고싶단말이에오',
+ 'published_date': '2019-10-02 11:46',
+ 'recommends': '0',
+ 'title': '성별변경권 내주세요ㅜ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3528',
+ 'views': 1434}
+2019-10-16 02:31:14 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 25 pages/min), scraped 23 items (at 23 items/min)
+2019-10-16 02:32:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3493> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2019-10-16 02:32:10 [py.warnings] WARNING: /home/proff/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField ScrapyItem.published_date received a naive datetime (2019-09-08 22:52:00) while time zone support is active.
+  RuntimeWarning)
+
+2019-10-16 02:32:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3493>
+{'category': 1,
+ 'contents': '한손으로하면 이렇게나 이쁜데\xa0....하 ....지 몸뚱아리보다 큰 창을 이렇게 쎄게 던지는데\xa0이정도면 '
+             '한손 해도 문제 없다고봅니다\xa0창 한손 기원',
+ 'published_date': '2019-09-08 22:52',
+ 'recommends': '0',
+ 'title': '창 한손좀;;; 제발',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3493',
+ 'views': 2026}
+2019-10-16 02:32:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9462,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 1400305,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 10, 15, 17, 32, 10, 301020),
+ 'item_scraped_count': 24,
+ 'log_count/DEBUG': 50,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 24,
+ 'memusage/max': 121647104,
+ 'memusage/startup': 76607488,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2019, 10, 15, 17, 30, 14, 103438)}
+2019-10-16 02:32:10 [scrapy.core.engine] INFO: Spider closed (shutdown)

@@ -1,0 +1,61 @@
+2019-10-16 02:28:45 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-10-16 02:28:45 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.3 (default, Mar 27 2019, 22:11:17) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Linux-5.0.0-31-generic-x86_64-with-debian-buster-sid
+2019-10-16 02:28:45 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/crawler/3c696d82ef7111e9a876d1df4cae82cb.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders']}
+2019-10-16 02:28:45 [scrapy.extensions.telnet] INFO: Telnet Password: 888f78eff698881a
+2019-10-16 02:28:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-16 02:28:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-16 02:28:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-16 02:28:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-10-16 02:28:45 [scrapy.core.engine] INFO: Spider opened
+2019-10-16 02:28:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-16 02:28:45 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method OffsiteMiddleware.spider_opened of <scrapy.spidermiddlewares.offsite.OffsiteMiddleware object at 0x7f31513e32b0>>
+Traceback (most recent call last):
+  File "/home/proff/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/home/proff/anaconda3/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/proff/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 67, in spider_opened
+    self.host_regex = self.get_host_regex(spider)
+  File "/home/proff/anaconda3/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 58, in get_host_regex
+    if url_pattern.match(domain):
+TypeError: expected string or bytes-like object
+2019-10-16 02:28:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-16 02:28:46 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/proff/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/home/proff/kenny/project/scrapy_app/scrapy_app/spiders/crawler.py", line 25, in start_requests
+    yield scrapy.Request(self.url + str(i), self.parse_board)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2019-10-16 02:28:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-10-16 02:28:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 10, 15, 17, 28, 46, 107372),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'memusage/max': 76431360,
+ 'memusage/startup': 76431360,
+ 'start_time': datetime.datetime(2019, 10, 15, 17, 28, 45, 936617)}
+2019-10-16 02:28:46 [scrapy.core.engine] INFO: Spider closed (finished)
